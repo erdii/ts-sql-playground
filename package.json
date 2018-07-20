@@ -1,0 +1,38 @@
+{
+	"name": "ts-sql-playground",
+	"version": "0.0.1",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "npm-run-all -s clean build-ts",
+		"watch": "npm-run-all -s build watch-ts",
+		"build-ts": "tsc",
+		"watch-ts": "tsc -w",
+		"start": "node .build/index.js",
+		"clean": "rm -rf .build || true",
+		"run-no-compile": "ts-node src/index.ts",
+		"ts-node": "ts-node"
+	},
+	"keywords": [],
+	"author": "jg@tcs.de",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/convict": "^4.0.1",
+		"@types/mysql": "^2.15.5",
+		"@types/node": "^8.0.26",
+		"@types/node-fetch": "^1.6.7",
+		"@types/pg": "^7.4.1",
+		"@types/pg-pool": "^0.0.3",
+		"npm-run-all": "^4.1.2",
+		"ts-node": "^4.1.0",
+		"tslint": "^5.7.0",
+		"typescript": "^2.5.2"
+	},
+	"dependencies": {
+		"convict": "^4.0.0",
+		"mysql": "^2.16.0",
+		"node-fetch": "^2.0.0",
+		"pg": "^7.4.0",
+		"pg-pool": "^2.0.3"
+	}
+}

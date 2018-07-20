@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"outDir": ".build/",
+		"sourceMap": false,
+		"module": "commonjs",
+		"target": "es2016",
+		"types": [
+			"node"
+		],
+		"allowJs": true,
+		"noImplicitAny": false,
+		"typeRoots": [
+			"typings",
+			"node_modules/@types"
+		]
+	},
+	"include": [
+		"src",
+		"typings"
+	]
+}
